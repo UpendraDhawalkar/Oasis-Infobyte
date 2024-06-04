@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <script src="https://kit.fontawesome.com/552c729d85.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#services" onclick="toggleMenu()">Services</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile2.png" alt="profile photo" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Upendra Dhawalkar</h1>
+      <p class="section__text__p2">Frontend Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="window.open('./assets/resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/upendradhawalkar'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/UpendraDhawalkar'" />
+      </div>
+    </div>
+  </section>
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/front.jpg" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="text-container">
+          <div class="about-col-2">
+            <p>
+              As a 4th-semester Computer Science Engineering (CSE) BTech student, I am passionate about exploring emerging technologies and their applications. With a keen interest in programming, algorithms, and problem-solving, I strive to expand my knowledge and skills in the field of computer science. Eager to contribute to innovative projects and collaborate with peers, I am driven by a strong desire to make a positive impact through technology.
+
+            </p>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('skills')">SKILLS</p>
+                <p class="tab-links" onclick="opentab('Experience')">EXPERIENCE</p>
+                <p class="tab-links" onclick="opentab('Education')">EDUCATION</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Frontend Developer</span><br>Design and Create Website</li>
+                    <li><span>Wordpress Developer</span><br>Design and Build Website</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Experience">
+                <ul>
+                    <li><span>2024</span><br>Internship on Web Development from CodeSoft</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2017-2018</span><br>(CGBSE 10th)- 90%</li>
+                    <li><span>2019-2020</span><br>(CBSE 12th) - 82%</li>
+                    <li><span>Currently</span><br>B.Tech in Computer Science and Engineering</li>
+                </ul>
+            </div>
+        </div>
+        
+      </div>
+    </div></div></section>
+    <br><br>
+
+  <section id="services">
+    <div class="container">
+        <h1 class="sub-title">MY SERVICES</h1>
+        <div class="services-list">
+                  <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2> Front End Development</h2>
+                    <p>Builds the front-end portion of websites and web applications using web languages such as HTML,
+                        CSS,JavaScript and Bootstrap that allow users to access and interact with the site.</p>
+                </div>
+
+                <div>
+                    <i class="fa-sharp fa-solid fa-window-restore"></i>
+                    <h2>Back End Development</h2>
+                    <p> Creating, maintaining, testing, and debugging the entire back end of an application or system.
+                        This includes the databases, data, API, and other processes taking place behind the scenes. </p>
+                </div>
+
+                <div>
+                    <i class="fa-sharp fa-solid fa-crop-simple"></i>
+                    <h2>WordPress Development</h2>
+                    <p> Design and build website using wordpress.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Projects</h1>
+    <div class="container">
+        <div class="work-list">
+            <div class="work">
+                <img src="assets/library.png">
+                <div class="layer">
+                    <h3>Library Management System</h3>
+                    <p>This project facilitates 
+                      Efficient library management system website with features for cataloging, borrowing, returning, and managing library resources and user accounts.</p>
+                    <a href=""><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="assets/portfolio.png">
+                <div class="layer">
+                    <h3>My Portfolio</h3>
+                    <p>This portfolio is a compilation of my academic and professional materials that exemplifies my
+                        beliefs, skills, qualifications, education, training, and experiences.</p>
+                    <a href="https://precious-dasik-1176ba.netlify.app/"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+              <img src="assets/cgsb.png">
+              <div class="layer">
+                  <h3>CGSB STUDY</h3>
+                  <p>
+                    Chhattisgarh Study Bureau's WordPress website offers comprehensive insights into Chhattisgarh, providing detailed information and resources for academic and research purposes.</p>
+                  <a href="https://cgsbstudy.com/"><i class="fas fa-external-link-alt"></i></a>
+              </div>
+          </div>
+        </div>
+    </div>
+  </section>
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:examplemail@gmail.com">upendradhawalkar18@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/upendradhawalkar">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/mobile2.png" alt="Mobile icon" class="icon contact-icon" />
+        <p style="color: aliceblue;">+918435388265</p>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Upendra. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
